@@ -19,18 +19,37 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        /* header */
         @media (max-width: 991px) {
             .navbar-nav {
                 padding-top: 0.7rem;
             }
         }
+        .coustom-link {
+                position: relative;
+                display: inline-block;
+            }
+            .coustom-link::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 1.8px;
+                background-color: red;
+                left: 50%;
+                top: 36px;
+                transform: translateX(-50%);
+                transition: all 0.4s ease;
+            }
+            .coustom-link:hover::after {
+                width: 100%;
+            }
+        .navbar {
+            box-shadow: 1px 1px 10px rgb(211, 211, 211);
+        }
         .sticky-top {
             position: sticky !important;
             top: 0 !important;
             z-index: 1020 !important;
-        }
-        .navbar {
-            box-shadow: 1px 1px 10px rgb(211, 211, 211);
         }
         .nav-head {
             font-family: Eczar;
@@ -38,7 +57,7 @@
             text-shadow: 1px 1px black;
         }
         .nav-link {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             transition: all 0.2s ease;
             font-weight: bold;
             color: rgb(117, 117, 117) !important;
@@ -53,6 +72,8 @@
             width: 20px;
             height: 20px;
         }
+        /* header */
+
         .slider-animate {
             animation-name: change;
             animation-iteration-count: infinite;
@@ -226,27 +247,37 @@
         .last-heading {
             text-align: right;
         }
-        .footer {
-            background-color: #3b4654;
-            color: white !important;
-        }
-        .foot-link a {
-            text-decoration: none;
-            font-size: 1.1rem;
-            color: rgb(192, 192, 192);
-            transition: all 0.3s ease-in-out;
-        }
-        .foot-link a:hover {
-            color: red;
-        }
+        
+            /* footer */
+            .footer {
+                background-color: #3b4654;
+                color: white !important;
+            }
+            .foot-link a {
+                text-decoration: none;
+                font-size: 1.1rem;
+                color: rgb(192, 192, 192);
+                transition: all 0.3s ease-in-out;
+            }
+            .foot-link a:hover {
+                color: red;
+            }
+            .img img {
+                border-radius: 5px;
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+                .img img {
+                    transform: rotate(270deg);
+                }
+            }
+            /* footer */
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-2 border-bottom">
+    <nav class="navbar navbar-expand-lg bg-white sticky-top border-2 border-bottom">
         <div class="container-fluid position-relative">
-            <div class="d-flex flex-column m-auto m-lg-0 ms-lg-1 pt-1">
-                <a class="navbar-brand fs-4 p-0 m-0 name nav-head" href="#">ग्रामपंचायत मौजे वडगांव</a>
-                <a class="navbar-brand fs-6 p-0 m-0 ms-4 ms-sm-3" href="#">ता. हातकणंगले जि. कोल्हापूर</a>
+            <div class="ms-2 ms-lg-0">
+                <img src="Project-image/Vadgaon-logo.jpeg" alt="" height="70px" width="240px">
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -258,34 +289,34 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-lg-2">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">मुखपृष्ठ</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="index.html">मुखपृष्ठ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Gram-panchayat.html">ग्रामपंचायतीबद्दल</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="Gram-panchayat.html">ग्रामपंचायतीबद्दल</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#seva">सेवा</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="#seva">सेवा</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="development.html">विकासकामे</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="development.html">विकासकामे</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">योजना</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="#">योजना</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">नोटीस</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="#">नोटीस</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Village.html">गाव</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="Village.html">गाव</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Gallary.html">गॅलरी</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="Gallary.html">गॅलरी</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="School.html">शाळा</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="School.html">शाळा</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Contact.html">संपर्क</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="Contact.html">संपर्क</a>
                     </li>
                 </ul>
             </div>
@@ -303,27 +334,27 @@
     <div class="container-fluid text-center py-4 bg-success-subtle border-bottom">
         <h1 class="fs-1 pb-4 text-danger fw-bold">मुख्यमंत्री पंचायतराज अभियान प्रभावीपणे राबविणार</h1>
         <div class="row ">
-            <div class="col col-12 col-xl-3 align-content-center">
+            <div class="col col-12 col-xl-3">
                 <h4 class="fs-4">- सरपंच कस्तुरी पाटील</h4>
                 <hr>
-                <p class="fs-5" style="font-family: Poppins;" id="development-para"><span style="font-weight: bold;">पुलाची शिरोली / महान कार्य वृत्तसेवा</span>
-                   ग्रामपंचायत, पंचायत समिती व जिल्हा परिषदांना प्रोत्साहीत करण्यासाठी मुख्यमंत्री समृध्द पंचायतराज अभियान राज्यभर राबविण्यात येणार आहे. या अभियानांतर्गत विशेष ग्रामसभेचे आयोजन करण्यात आले होते. याम ध्ये ३१ डिसेंबरपर्यंत विविध उपक्रम राबविले जाणार असल्याची माहिती सरपंच कस्तुरी पाटील यांनी दिली. मौजे वडगाव ग्रामपंचायतीच्या</p>
+                <p class="fs-6 lh-lg" style="font-family: Poppins;" id="development-para"><span style="font-weight: bold;">पुलाची शिरोली / महान कार्य वृत्तसेवा</span>
+                   ग्रामपंचायत, पंचायत समिती व जिल्हा परिषदांना प्रोत्साहीत करण्यासाठी मुख्यमंत्री समृध्द पंचायतराज अभियान राज्यभर राबविण्यात येणार आहे. या अभियानांतर्गत विशेष ग्रामसभेचे आयोजन करण्यात आले होते. याम ध्ये ३१ डिसेंबरपर्यंत विविध उपक्रम राबविले जाणार असल्याची माहिती सरपंच कस्तुरी पाटील यांनी दिली. मौजे वडगाव ग्रामपंचायतीच्या शाहू सभागृहात विशेष ग्राम</p>
             </div>
 
             <div class="col col-12 col-xl-6">
                 <img src="Development/Development-img-1.jpeg" width="100%" height="175px" alt=""  class="img-class">
                 <div class="flex-box">
                     <div id="set-width" >
-                        <p class="fs-5 set-padding" style="font-family: Poppins;" id="development-para">शाहू सभागृहात विशेष ग्रामसभा पार पडली. यावेळी सुशासनयुक्त व लोकाभिमुक पंचायत प्रशासन, आर्थिकदृष्ट्या सक्षम पंचायत, जल समृध्द, स्वच्छ व हरितगाव, रोजगार हमी व इतर योजनांचे अभिसरण, गाव पातळीवर संस्था सक्षमीकरण, उपजिविका विकास व सामाजिक</p>
+                        <p class="fs-6 lh-lg set-padding" style="font-family: Poppins;" id="development-para">सभा पार पडली. यावेळी सुशासनयुक्त व लोकाभिमुक पंचायत प्रशासन, आर्थिकदृष्ट्या सक्षम पंचायत, जल समृध्द, स्वच्छ व हरितगाव, रोजगार हमी व इतर योजनांचे अभिसरण, गाव पातळीवर संस्था सक्षमीकरण, उपजिविका विकास व सामाजिक न्याय</p>
                     </div>
                     <div  id="set-width" class="set-margin">
-                        <p class="fs-5" style="font-family: Poppins;" id="development-para">न्याय, लोकसहभाग व श्रमदानातून लोकचळवळ निर्माण, या संदर्भात ग्रामपंचायत अधिकारी भारती देंगे पाटील यांनी मार्गदर्शन केले. यावेळी तलाठी सचिन चांदणे यांनी पाणंद रस्त्यासंदर्भात माहिती दिली. तर कृषी सहाय्यक उमेश सकटे व डॉ. पंकज पाटील यांनी आपआपल्या विभागाची</p>
+                        <p class="fs-6 lh-lg" style="font-family: Poppins;" id="development-para">, लोकसहभाग व श्रमदानातून लोकचळवळ निर्माण, या संदर्भात ग्रामपंचायत अधिकारी भारती देंगे पाटील यांनी मार्गदर्शन केले. यावेळी तलाठी सचिन चांदणे यांनी पाणंद रस्त्यासंदर्भात माहिती दिली. तर कृषी सहाय्यक उमेश सकटे व डॉ. पंकज पाटील </p>
                     </div>
                 </div>
             </div>
 
             <div class="col col-12  col-xl-3">
-                <p  class="fs-5" style="font-family: Poppins;"id="development-para">सखोल माहिती देऊन मनोगत व्यक्त केले. यावेळी सरपंच कस्तुरी पाटील, उपसरपंच स्वप्नील चौगुले, ग्राम पंचायत अधिकारी भारती देंगे पाटील, माजी उपसरपंच व विद्यमान सदस्य सुनिल खारेपाटणे, सुरेश कांबरे, रघुनाथ गोरड, नितीन घोरपडे, सुवर्णा सुतार, सुनिता मोरे, सविता सावंत, दिपाली तराळ, मधुमती चौगुले, माधूरी आकिवाटे, तंटामुक्त अध्यक्ष मधुकर आकिवाटे, महिला बचत गट, विविध संस्थांचे पदाधिकारी, शासकीय कर्मचारी व ग्रामस्थ मोठ्या संख्येने उपस्थित होते.</p>
+                <p  class="fs-6 lh-lg" style="font-family: Poppins;"id="development-para">यांनी आपआपल्या विभागाची सखोल माहिती देऊन मनोगत व्यक्त केले. यावेळी सरपंच कस्तुरी पाटील, उपसरपंच स्वप्नील चौगुले, ग्राम पंचायत अधिकारी भारती देंगे पाटील, माजी उपसरपंच व विद्यमान सदस्य सुनिल खारेपाटणे, सुरेश कांबरे, रघुनाथ गोरड, नितीन घोरपडे, सुवर्णा सुतार, सुनिता मोरे, सविता सावंत, दिपाली तराळ, मधुमती चौगुले, माधूरी आकिवाटे, तंटामुक्त अध्यक्ष मधुकर आकिवाटे, महिला बचत गट, विविध संस्थांचे पदाधिकारी, शासकीय कर्मचारी व ग्रामस्थ मोठ्या संख्येने उपस्थित होते.</p>
             </div>
         </div>
     </div>
@@ -333,10 +364,10 @@
         <div class="container">
             <img id="img-compress" src="Development/Development-2.jpeg" alt="" width="100%" height="350px">
             <div class="row">
-                <div class="col col-12 col-lg-6 mt-3 fs-5" style="font-family: Poppins; text-align: justify">
+                <div class="col col-12 col-lg-6 mt-3 fs-6 lh-lg" style="font-family: Poppins; text-align: justify">
                     <p> शिरोली महान कार्य वृत्तसेवा पत्रे मौजे वडगांव (ता. हातकणंगले) येथील ग्राम पंचायतीच्यावतीने ग्रामपंचायत कर्मचाऱ्यांचा मोफत विमा उतरविण्यात आला. ग्लोबल पर्सनल गार्ड पॉलिसी (प्रॉडक्ट), बजाज अलियांझ जनरल इन्शुरन्स कंपनीच्या या पॉलिसीमध्ये ५ लाख रूपयांचे अपघाती विमा संरक्षण व अपंगत्व विमा संरक्षण, तर २ लाख रूपयांचा अपघाती हॉस्पिटलायझशेन खर्च, अशा सुविधा मिळणार आहेत. सदरच्या विमा पॉलिसीची पत्रे विविध</p>
                 </div>
-                <div class="col col-12 col-lg-6 mt-0 mt-lg-3 fs-5" style="font-family: Poppins; text-align: justify">
+                <div class="col col-12 col-lg-6 mt-0 mt-lg-3 fs-6 lh-lg" style="font-family: Poppins; text-align: justify">
                     <p> मान्यवरांच्या हस्ते सुपूर्द करण्यात आली. यावेळी सरपंच कस्तुरी पाटील, उपसरपंच स्वप्निल चौगुले, ग्रामसेविका भारती ढेंगे-पाटील, माजी उपसरपंच सुनिल खारेपाटणे, सुरेश कांबरे, रघूनाथ गोरड, नितीन घोरपडे, सविता सावंत, सुनिता मोरे, सुवर्णा सुतार, दिपाली तराळ, मिनाक्षी आकिवाटे, मधुमती चौगुले, कर्मचारी ज्ञानेश्वर सावंत, मंगेश गोरड, आनंदा घुगरे, सुभाष कांबळे, स्वाती पट्टणकुडे व विमा प्रतिनिधी सतिश सावंत आदी उपस्थित होते.</p>
                 </div>
             </div>
@@ -376,48 +407,48 @@
         </div>
     </div>
 
-    <div class="container-fluid py-5 footer">
+    <div class="container-fluid py-4 footer">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-            <div class="col text-center text-sm-start text-md-center style="font-family: Poppins; font-size: 0.9rem" align-content-center">
-                <div>
-                    <h1 style="font-size: 2rem; font-family: Eczar;">ग्रामपंचायत मौजे वडगांव</h1>
+                <div class="col align-content-center mb-4 mb-sm-0 text-center text-sm-start">
+                    <div class="img me-0 me-md-3 me-lg-0">
+                        <img src="Project-image/Vadgaon-logo.jpeg" alt="" height="70px" width="220px">
+                    </div>
                 </div>
-                <div class="mb-4 mb-md-0">
-                    <h2 style="font-size: 1.6rem;">ता. हातकणंगले जि. कोल्हापूर</h2>
+                <div class="col foot-link">
+                    <div class="fs-4">महत्वाची संकेतस्थळे</div>
+                    <div><a href="https://maharashtra.gov.in/" target="_blank">🔗महाराष्ट्र शासन</a></div>
+                    <div><a href="https://majhigrampanchayat.com/" target="_blank">🔗माझी ग्रामपंचायत</a></div>
+                    <div><a href="https://rdd.maharashtra.gov.in/en/" target="_blank">🔗ग्रामविकास विभाग</a></div>
+                    <div><a href="https://egramswaraj.gov.in/" target="_blank">🔗ई-ग्रामस्वराज</a></div>
+                    <div><a href="https://gr.maharashtra.gov.in/1125/%e0%a4%ae%e0%a5%81%e0%a4%96%e0%a5%8d%e0%a4%af-%e0%a4%aa%e0%a5%83%e0%a4%b7%e0%a5%8d%e0%a4%a0" target="_blank">🔗शासन निर्णय</a></div>
+                    <div class="mb-4 mb-md-0"><a href="https://nrega.dord.gov.in/" target="_blank">🔗MGNREGA</a></div>
                 </div>
-            </div>
-            <div class="col foot-link">
-                <div class="fs-4">महत्वाची संकेतस्थळे</div>
-                <div><a href="#">🔗महाराष्ट्र शासन</a></div>
-                <div><a href="#">🔗माझी ग्रामपंचायत</a></div>
-                <div><a href="#">🔗ग्रामविकास विभाग</a></div>
-                <div><a href="#">🔗ई-ग्रामस्वराज</a></div>
-                <div><a href="#">🔗शासन निर्णय</a></div>
-                <div  class="mb-4 mb-md-0"><a href="#">🔗MGNREGA</a></div>
-            </div>
-            <div class="col foot-link">
-                <div class="fs-4">लिंक्स</div>
-                <div><a href="index.html">🔗मुखपृष्ठ</a></div>
-                <div><a href="#">🔗विकासकामे</a></div>
-                <div><a href="#">🔗योजना</a></div>
-                <div><a href="#">🔗माझे गाव</a></div>
-                <div><a href="#">🔗गॅलरी</a></div>
-                <div  class="mb-4 mb-sm-0"><a href="#">🔗संपर्क</a></div>
-            </div>
-            <div class="col">
-                <div class="fs-4">संपर्क</div>
-                <div class="mb-2" style="font-family: Poppins; font-size: 0.9rem">ग्रामपंचायत कार्यालय, मौजे वडगांव, ता. हातकणंगले, जि. कोल्हापूर 416122</div>
-                <div style="font-family: Poppins; font-size: 0.9rem">संपर्क क्र.: 9665259715</div>
-            </div>
+                <div class="col foot-link">
+                    <div class="fs-4">लिंक्स</div>
+                    <div><a href="index.html">🔗मुखपृष्ठ</a></div>
+                    <div><a href="development.html">🔗विकासकामे</a></div>
+                    <div><a href="#">🔗योजना</a></div>
+                    <div><a href="Village.html">🔗माझे गाव</a></div>
+                    <div><a href="Gallary.html">🔗गॅलरी</a></div>
+                    <div class="mb-4 mb-sm-0"><a href="Contact.html">🔗संपर्क</a></div>
+                </div>
+                <div class="col">
+                    <div class="fs-4">संपर्क</div>
+                    <div class="mb-2" style="font-family: Poppins; font-size: 0.9rem">ग्रामपंचायत कार्यालय, मौजे वडगांव,
+                        ता. हातकणंगले, जि. कोल्हापूर 416122</div>
+                    <div style="font-family: Poppins; font-size: 0.9rem">संपर्क क्र.: 9665259715</div>
+                </div>
             </div>
             <hr>
             <div class="text-center pt-3">
                 <div class="mb-2">
-                    <h5> <span class="text-primary">&copy; Copyright</span> ग्रामपंचायत मौजे वडगांव | All Rights Reserved
+                    <h5 class="fs-6"> <span class="text-primary">Copyright &copy;</span> <span style="font-family: Poppins;" class="fs-6">ग्रामपंचायत मौजे वडगांव</span> | All Rights Reserved
                     </h5>
                 </div>
-                <div><h6>Designed by <span class="text-warning pe-1">Piyush Lohar</span><a href="https://github.com/piyushlohar2008-byte" target="_blank"><i class="text-white fa-brands fa-github"></i></a></h6></div>
+                <div>
+                    <h6 class="fs-6">Designed by <a href="https://piyushlohar2008-byte.github.io./Micro-projects/" target="_blank" class="text-decoration-none"><span class="text-warning">Piyush Lohar</span></a> <a href="https://github.com/piyushlohar2008-byte" target="_blank"><i class="text-white fa-brands fa-github"></i></a> </h6>
+                </div>
             </div>
         </div>
     </div>
