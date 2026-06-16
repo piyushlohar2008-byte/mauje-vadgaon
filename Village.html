@@ -20,40 +20,60 @@
             .curve-img img {
                 border-radius: 5px;
             }
-            @media (max-width: 991px) {
-                .navbar-nav {
-                    padding-top: 0.7rem;
-                }
+            /* header */
+        @media (max-width: 991px) {
+            .navbar-nav {
+                padding-top: 0.7rem;
             }
-            .navbar {
-                box-shadow: 1px 1px 10px rgb(211, 211, 211);
+        }
+        .coustom-link {
+                position: relative;
+                display: inline-block;
             }
-            .sticky-top {
-                position: sticky !important;
-                top: 0 !important;
-                z-index: 1020 !important;
+            .coustom-link::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 1.8px;
+                background-color: red;
+                left: 50%;
+                top: 36px;
+                transform: translateX(-50%);
+                transition: all 0.4s ease;
             }
-            .nav-head {
-                font-family: Eczar;
-                font-weight: 600;
-                text-shadow: 1px 1px black;
+            .coustom-link:hover::after {
+                width: 100%;
             }
-            .nav-link {
-                font-size: 1.2rem;
-                transition: all 0.2s ease;
-                font-weight: bold;
-                color: rgb(117, 117, 117) !important;
-            }
-            .nav-link:hover {
-                color: red !important;
-            }
-            .name {
-                color: red !important;
-            }
-            .navbar-toggler-icon {
-                width: 20px;
-                height: 20px;
-            }
+        .navbar {
+            box-shadow: 1px 1px 10px rgb(211, 211, 211);
+        }
+        .sticky-top {
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 1020 !important;
+        }
+        .nav-head {
+            font-family: Eczar;
+            font-weight: 600;
+            text-shadow: 1px 1px black;
+        }
+        .nav-link {
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            font-weight: bold;
+            color: rgb(117, 117, 117) !important;
+        }
+        .nav-link:hover {
+            color: red !important;
+        }
+        .name {
+            color: red !important;
+        }
+        .navbar-toggler-icon {
+            width: 20px;
+            height: 20px;
+        }
+        /* header */
 
             #first-image {
                 width: 100%;
@@ -195,6 +215,8 @@
                 }
             }
 
+            
+            /* footer */
             .footer {
                 background-color: #3b4654;
                 color: white !important;
@@ -208,14 +230,22 @@
             .foot-link a:hover {
                 color: red;
             }
+            .img img {
+                border-radius: 5px;
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+                .img img {
+                    transform: rotate(270deg);
+                }
+            }
+            /* footer */
         </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-2 border-bottom">
+    <nav class="navbar navbar-expand-lg bg-white sticky-top border-2 border-bottom">
         <div class="container-fluid position-relative">
-            <div class="d-flex flex-column m-auto m-lg-0 ms-lg-1 pt-1">
-                <a class="navbar-brand fs-4 p-0 m-0 name nav-head" href="#">ग्रामपंचायत मौजे वडगांव</a>
-                <a class="navbar-brand fs-6 p-0 m-0 ms-4 ms-sm-3" href="#">ता. हातकणंगले जि. कोल्हापूर</a>
+            <div class="ms-2 ms-lg-0">
+                <img src="Project-image/Vadgaon-logo.jpeg" alt="" height="70px" width="240px">
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -227,34 +257,34 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-lg-2">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">मुखपृष्ठ</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="index.html">मुखपृष्ठ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Gram-panchayat.html">ग्रामपंचायतीबद्दल</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="Gram-panchayat.html">ग्रामपंचायतीबद्दल</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#seva">सेवा</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="#seva">सेवा</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="development.html">विकासकामे</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="development.html">विकासकामे</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">योजना</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="#">योजना</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">नोटीस</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="#">नोटीस</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Village.html">गाव</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="Village.html">गाव</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Gallary.html">गॅलरी</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="Gallary.html">गॅलरी</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="School.html">शाळा</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="School.html">शाळा</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Contact.html">संपर्क</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="Contact.html">संपर्क</a>
                     </li>
                 </ul>
             </div>
@@ -265,16 +295,16 @@
         <img src="Project-image/Mauje-Vadgaon.jpg" alt="" id="first-image">
 
         <div class="row justify-content-center mt-2">
-            <div class="col col-11 col-sm-5 col-xl-3 fs-4 main-paragraph">
+            <div class="col col-11 col-sm-5 col-xl-3 fs-5 main-paragraph">
                 हे गाव सर्व समाज घटकानी वसलेले एक सुंदर गाव आहे. गावामध्ये तीन जागृत देवस्थाने आहेत. त्यापैकी महादेव, मारुती व हजरत पीर चाँद बुखारी साहेब दर्गा हिंदू-मुस्लीम ऐक्याचे प्रतीक म्हणून चाँद बुखारी दर्याची ख्याती आहे. सन 1834 साली पैंगबर वासी काशीम बंडु मुल्लाणी यांनी आपल्या स्वःतच्या शेतामध्ये लहानसा  
             </div>
-            <div class="col col-11 col-sm-5 col-xl-3 fs-4 main-paragraph">
+            <div class="col col-11 col-sm-5 col-xl-3 fs-5 main-paragraph">
                 दर्गा बांधला त्यांना त्यावेळी दर्गा बांधण्यासाठी गावातील लोकांचे सहकार्य मिळाले त्यानंतर त्यांचे पूत्र पैगंबर वासी सिलेमान कादर मुल्लाणी यांनी दर्याचे व्यवस्थापन पाहण्यास सुरुवात केली त्यांनी दर्यास जाण्यासाठी ओढ्यालगत पायऱ्या बांधून घेतल्या त्यामुळे भाविकांना चांगल्या सोयी निर्माण झाल्या.
             </div>
-            <div class="col col-11 col-sm-5 col-xl-3 fs-4 main-paragraph">
+            <div class="col col-11 col-sm-5 col-xl-3 fs-5 main-paragraph">
                 वडील आजोबा यांच्या दर्यातील व्यवस्थापनाचा वारसा जपूण ठेवण्यासाठी मौजे वडगावातील प्रतिष्ठित नागरीक व आपल्या कुटुंबाच्या मदतीने दर्याचे नुतनीकरण करुन सुसज्ज अशा दर्याची निर्मिती केली आहे. या कामी त्यांना त्यांचे सुपूत्र माजी सरपंच याशीन अल्ली मुलाणी यांचे सहकार्य लाभले. कै. गौस हजारी, 
             </div>
-            <div class="col col-11 col-sm-5 col-xl-3 fs-4 main-paragraph">
+            <div class="col col-11 col-sm-5 col-xl-3 fs-5 main-paragraph">
                 कै. बाबुराव चौगले, कै. शंकर आकिवाटे, कै. राजाराम शेंडगे, कै. गणपती भोरे, काशिम पटेल, हसन बारगीर, नामदेव, लोंढे यांनी पुढाकार घेऊन लोकवर्गनीतून प्रशस्त असा दर्गा उभारला. चाँद बुखारी उरुसास कर्नाटक राज्यातून तसेच गावातील माहेर वासीसह लाखो भाविक उरुसासाठी येतात.
             </div>
         </div>
@@ -287,7 +317,7 @@
                 <div class="col col-12 col-sm-8 col-lg-4 mb-3 mb-lg-0 bappa-img">
                     <img src="Project-image/Hanuman.jpeg" alt="Bappa">
                 </div>
-                <div class="col col-12 col-lg-7 fs-4 pb-4 pb-lg-0 align-content-center" style="text-align: justify; font-family: Poppins;">
+                <div class="col col-12 col-lg-7 fs-5 pb-4 pb-lg-0 align-content-center" style="text-align: justify; font-family: Poppins;">
                     अतुलनीय शक्ती, अखंड भक्ती आणि निस्वार्थ सेवाभाव यांचे मूर्तिमंत प्रतीक असलेले श्री हनुमान भक्तांच्या जीवनातील भय, संकटे आणि अडथळे दूर करतात. प्रभू श्रीरामांप्रती असलेली त्यांची अढळ निष्ठा प्रत्येकाला कर्तव्य, धैर्य आणि समर्पणाची प्रेरणा देते. श्री हनुमानांच्या कृपेने भक्तांना आत्मविश्वास, सामर्थ्य आणि यश प्राप्त होते...🙏🚩
                 </div>
                 <hr>
@@ -298,7 +328,7 @@
         <div class="container-fluid bg-body-tertiary pt-0 pt-lg-4 pb-5 curve-img">
             <div class="container">
                 <div class="row gap-2 justify-content-center">
-                <div class="col col-12 col-lg-7 fs-4 align-content-center" style="text-align: justify; font-family: Poppins;">
+                <div class="col col-12 col-lg-7 fs-5 align-content-center" style="text-align: justify; font-family: Poppins;">
                     हजरत पीर चंदबुखरी साहेब हे श्रद्धा, मानवता, प्रेम आणि शांततेचे प्रतीक मानले जातात. त्यांच्या पवित्र स्मृती आणि शिकवणी समाजात बंधुभाव, सद्भावना आणि सेवाभाव वाढवण्याची प्रेरणा देतात. त्यांच्या दरबारात येणाऱ्या प्रत्येक भक्ताला मनःशांती, आशा आणि आध्यात्मिक समाधान लाभते. सर्व धर्मांचा आदर आणि मानवतेची सेवा हा त्यांच्या संदेशाचा मूलभूत आधार आहे...🙏🚩
                 </div>
                 <div class="col col-12 col-sm-9 col-lg-4 mt-3 mt-lg-0 bappa-img">
@@ -315,7 +345,7 @@
                 <div class="col col-12 col-sm-8 col-lg-4 mb-3 mb-lg-0 bappa-img">
                     <img src="Project-image/Bappa.jpeg" alt="Bappa">
                 </div>
-                <div class="col col-12 col-lg-7 fs-4 pb-4 pb-lg-0 align-content-center" style="text-align: justify; font-family: Poppins;">
+                <div class="col col-12 col-lg-7 fs-5 pb-4 pb-lg-0 align-content-center" style="text-align: justify; font-family: Poppins;">
                     विघ्नहर्ता, बुद्धीची देवता आणि मंगलकार्याचा अधिपती श्री गणेश हे भक्तांच्या जीवनातील सर्व संकटे दूर करून सुख, समृद्धी आणि यशाचा आशीर्वाद देतात. श्री गणेशाची भक्ती मनाला शांतता, आत्मविश्वास आणि सकारात्मक ऊर्जा प्रदान करते. 'गणपती बाप्पा मोरया' या जयघोषाने भक्तांच्या हृदयात श्रद्धा, भक्ती आणि उत्साह जागृत होतो...🙏🚩
                 </div>
                 <hr>
@@ -326,7 +356,7 @@
         <div class="container-fluid bg-body-tertiary pt-0 pt-lg-4 pb-5 curve-img">
             <div class="container">
                 <div class="row gap-2 justify-content-center">
-                <div class="col col-12 col-lg-7 fs-4 align-content-center" style="text-align: justify; font-family: Poppins;">
+                <div class="col col-12 col-lg-7 fs-5 align-content-center" style="text-align: justify; font-family: Poppins;">
                     आदिशक्ती स्वरूपिणी दुर्गा माता या शक्ती, साहस आणि संरक्षणाचे प्रतीक आहेत. त्या आपल्या भक्तांना संकटांशी सामना करण्याचे बळ, आत्मविश्वास आणि धैर्य प्रदान करतात. दुर्गा मातेची उपासना जीवनात सकारात्मकता, यश आणि समृद्धी आणते. तिच्या कृपेने भक्तांच्या जीवनातील अडचणी दूर होऊन सुख, शांती आणि आनंद प्राप्त होतो...🙏🚩
                 </div>
                 <div class="col col-12 col-sm-9 col-lg-4 mt-3 mt-lg-0 bappa-img">
@@ -371,48 +401,48 @@
         </div>
     </div>
 
-      <div class="container-fluid py-5 footer">
+    <div class="container-fluid py-4 footer">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-            <div class="col text-center text-sm-start text-md-center style="font-family: Poppins; font-size: 0.9rem" align-content-center">
-                <div>
-                    <h1 style="font-size: 2rem; font-family: Eczar;">ग्रामपंचायत मौजे वडगांव</h1>
+                <div class="col align-content-center mb-4 mb-sm-0 text-center text-sm-start">
+                    <div class="img me-0 me-md-3 me-lg-0">
+                        <img src="Project-image/Vadgaon-logo.jpeg" alt="" height="70px" width="220px">
+                    </div>
                 </div>
-                <div class="mb-4 mb-md-0">
-                    <h2 style="font-size: 1.6rem;">ता. हातकणंगले जि. कोल्हापूर</h2>
+                <div class="col foot-link">
+                    <div class="fs-4">महत्वाची संकेतस्थळे</div>
+                    <div><a href="https://maharashtra.gov.in/" target="_blank">🔗महाराष्ट्र शासन</a></div>
+                    <div><a href="https://majhigrampanchayat.com/" target="_blank">🔗माझी ग्रामपंचायत</a></div>
+                    <div><a href="https://rdd.maharashtra.gov.in/en/" target="_blank">🔗ग्रामविकास विभाग</a></div>
+                    <div><a href="https://egramswaraj.gov.in/" target="_blank">🔗ई-ग्रामस्वराज</a></div>
+                    <div><a href="https://gr.maharashtra.gov.in/1125/%e0%a4%ae%e0%a5%81%e0%a4%96%e0%a5%8d%e0%a4%af-%e0%a4%aa%e0%a5%83%e0%a4%b7%e0%a5%8d%e0%a4%a0" target="_blank">🔗शासन निर्णय</a></div>
+                    <div class="mb-4 mb-md-0"><a href="https://nrega.dord.gov.in/" target="_blank">🔗MGNREGA</a></div>
                 </div>
-            </div>
-            <div class="col foot-link">
-                <div class="fs-4">महत्वाची संकेतस्थळे</div>
-                <div><a href="#">🔗महाराष्ट्र शासन</a></div>
-                <div><a href="#">🔗माझी ग्रामपंचायत</a></div>
-                <div><a href="#">🔗ग्रामविकास विभाग</a></div>
-                <div><a href="#">🔗ई-ग्रामस्वराज</a></div>
-                <div><a href="#">🔗शासन निर्णय</a></div>
-                <div  class="mb-4 mb-md-0"><a href="#">🔗MGNREGA</a></div>
-            </div>
-            <div class="col foot-link">
-                <div class="fs-4">लिंक्स</div>
-                <div><a href="index.html">🔗मुखपृष्ठ</a></div>
-                <div><a href="#">🔗विकासकामे</a></div>
-                <div><a href="#">🔗योजना</a></div>
-                <div><a href="#">🔗माझे गाव</a></div>
-                <div><a href="#">🔗गॅलरी</a></div>
-                <div  class="mb-4 mb-sm-0"><a href="#">🔗संपर्क</a></div>
-            </div>
-            <div class="col">
-                <div class="fs-4">संपर्क</div>
-                <div class="mb-2" style="font-family: Poppins; font-size: 0.9rem">ग्रामपंचायत कार्यालय, मौजे वडगांव, ता. हातकणंगले, जि. कोल्हापूर 416122</div>
-                <div style="font-family: Poppins; font-size: 0.9rem">संपर्क क्र.: 9665259715</div>
-            </div>
+                <div class="col foot-link">
+                    <div class="fs-4">लिंक्स</div>
+                    <div><a href="index.html">🔗मुखपृष्ठ</a></div>
+                    <div><a href="development.html">🔗विकासकामे</a></div>
+                    <div><a href="#">🔗योजना</a></div>
+                    <div><a href="Village.html">🔗माझे गाव</a></div>
+                    <div><a href="Gallary.html">🔗गॅलरी</a></div>
+                    <div class="mb-4 mb-sm-0"><a href="Contact.html">🔗संपर्क</a></div>
+                </div>
+                <div class="col">
+                    <div class="fs-4">संपर्क</div>
+                    <div class="mb-2" style="font-family: Poppins; font-size: 0.9rem">ग्रामपंचायत कार्यालय, मौजे वडगांव,
+                        ता. हातकणंगले, जि. कोल्हापूर 416122</div>
+                    <div style="font-family: Poppins; font-size: 0.9rem">संपर्क क्र.: 9665259715</div>
+                </div>
             </div>
             <hr>
             <div class="text-center pt-3">
                 <div class="mb-2">
-                    <h5> <span class="text-primary">&copy; Copyright</span> ग्रामपंचायत मौजे वडगांव | All Rights Reserved
+                    <h5 class="fs-6"> <span class="text-primary">Copyright &copy;</span> <span style="font-family: Poppins;" class="fs-6">ग्रामपंचायत मौजे वडगांव</span> | All Rights Reserved
                     </h5>
                 </div>
-                <div><h6>Designed by <span class="text-warning pe-1">Piyush Lohar</span><a href="https://github.com/piyushlohar2008-byte" target="_blank"><i class="text-white fa-brands fa-github"></i></a></h6></div>
+                <div>
+                    <h6 class="fs-6">Designed by <a href="https://piyushlohar2008-byte.github.io./Micro-projects/" target="_blank" class="text-decoration-none"><span class="text-warning">Piyush Lohar</span></a> <a href="https://github.com/piyushlohar2008-byte" target="_blank"><i class="text-white fa-brands fa-github"></i></a> </h6>
+                </div>
             </div>
         </div>
     </div>
