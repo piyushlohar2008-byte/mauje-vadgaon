@@ -20,13 +20,15 @@
                 padding: 0;
                 margin: 0;
             }
-            @media (max-width: 991px) {
-                .navbar-nav {
-                    padding-top: 0.7rem;
-                }
+           /* header */
+        @media (max-width: 991px) {
+            .navbar-nav {
+                padding-top: 0.7rem;
             }
-            .coustom-link {
+        }
+        .coustom-link {
                 position: relative;
+                display: inline-block;
             }
             .coustom-link::after {
                 content: "";
@@ -35,42 +37,43 @@
                 height: 1.8px;
                 background-color: red;
                 left: 50%;
-                top: 44px;
+                top: 36px;
                 transform: translateX(-50%);
                 transition: all 0.4s ease;
             }
             .coustom-link:hover::after {
                 width: 100%;
             }
-            .navbar {
-                box-shadow: 1px 1px 10px rgb(211, 211, 211);
-            }
-            .sticky-top {
-                position: sticky !important;
-                top: 0 !important;
-                z-index: 1020 !important;
-            }
-            .nav-head {
-                font-family: Eczar;
-                font-weight: 600;
-                text-shadow: 1px 1px black;
-            }
-            .nav-link {
-                font-size: 1.2rem;
-                transition: all 0.2s ease;
-                font-weight: bold;
-                color: rgb(117, 117, 117) !important;
-            }
-            .nav-link:hover {
-                color: red !important;
-            }
-            .name {
-                color: red !important;
-            }
-            .navbar-toggler-icon {
-                width: 20px;
-                height: 20px;
-            }
+        .navbar {
+            box-shadow: 1px 1px 10px rgb(211, 211, 211);
+        }
+        .sticky-top {
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 1020 !important;
+        }
+        .nav-head {
+            font-family: Eczar;
+            font-weight: 600;
+            text-shadow: 1px 1px black;
+        }
+        .nav-link {
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            font-weight: bold;
+            color: rgb(117, 117, 117) !important;
+        }
+        .nav-link:hover {
+            color: red !important;
+        }
+        .name {
+            color: red !important;
+        }
+        .navbar-toggler-icon {
+            width: 20px;
+            height: 20px;
+        }
+        /* header */
 
             @media (max-width: 550px) {
                 .school-first-image {
@@ -185,20 +188,6 @@
             }
             .foot-contain {
                 padding: 3rem 0;
-            }
-
-            .footer {
-                background-color: #3b4654;
-                color: white !important;
-            }
-            .foot-link a {
-                text-decoration: none;
-                font-size: 1.1rem;
-                color: rgb(192, 192, 192);
-                transition: all 0.3s ease-in-out;
-            }
-            .foot-link a:hover {
-                color: red;
             }
 
             #bala-first-head {
@@ -370,11 +359,17 @@
                 border-bottom-right-radius: 50px;
                 background-color: rgb(79 112 182);
             }
+            @media (min-width: 376px) and (max-width: 400px) {
+                .balawadhut-heading {
+                    padding: 1.3rem 2.9rem;
+                }
+            }
             @media (max-width: 375px) {
                 .balawadhut-heading {
                     padding: 1.4rem 3rem;
                 }
             }
+
             .resourse {
                 transition: all 0.2s ease-in-out;
                 font-weight: bold;
@@ -402,14 +397,38 @@
             .item iframe {
                 box-shadow: 2px 2px 5px rgb(185, 185, 185), -2px -2px 5px rgb(185, 185, 185);
             }
+
+            
+            /* footer */
+            .footer {
+                background-color: #3b4654;
+                color: white !important;
+            }
+            .foot-link a {
+                text-decoration: none;
+                font-size: 1.1rem;
+                color: rgb(192, 192, 192);
+                transition: all 0.3s ease-in-out;
+            }
+            .foot-link a:hover {
+                color: red;
+            }
+            .img img {
+                border-radius: 5px;
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+                .img img {
+                    transform: rotate(270deg);
+                }
+            }
+            /* footer */
         </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top border-2 border-bottom">
+    <nav class="navbar navbar-expand-lg bg-white sticky-top border-2 border-bottom">
         <div class="container-fluid position-relative">
-            <div class="d-flex flex-column m-auto m-lg-0 ms-lg-1 pt-1">
-                <a class="navbar-brand fs-4 p-0 m-0 name nav-head" href="#">ग्रामपंचायत मौजे वडगांव</a>
-                <a class="navbar-brand fs-6 p-0 m-0 ms-4 ms-sm-3" href="#">ता. हातकणंगले जि. कोल्हापूर</a>
+            <div class="ms-2 ms-lg-0">
+                <img src="Project-image/Vadgaon-logo.jpeg" alt="" height="70px" width="240px">
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -421,34 +440,34 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-lg-2">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">मुखपृष्ठ</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="index.html">मुखपृष्ठ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Gram-panchayat.html">ग्रामपंचायतीबद्दल</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="Gram-panchayat.html">ग्रामपंचायतीबद्दल</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#seva">सेवा</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="#seva">सेवा</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="development.html">विकासकामे</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="development.html">विकासकामे</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">योजना</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="#">योजना</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">नोटीस</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="#">नोटीस</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Village.html">गाव</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="Village.html">गाव</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Gallary.html">गॅलरी</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="Gallary.html">गॅलरी</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="School.html">शाळा</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="School.html">शाळा</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Contact.html">संपर्क</a>
+                        <a class="nav-link active coustom-link" aria-current="page" href="Contact.html">संपर्क</a>
                     </li>
                 </ul>
             </div>
@@ -574,7 +593,7 @@
     <div class="container-fluid py-5 balawadhut-main-container">
         <div class="container d-flex justify-content-center align-content-center">
             <div class="box-curve d-flex flex-column justify-content-center align-content-center">
-                 <div class="text-center pb-3">
+                 <div class="text-center pb-3 pt-1">
                 <h2 id="sir-head">संस्थापक</h2>
                 </div>
             <div>
@@ -584,7 +603,7 @@
                 <div id="sir-name" class="text-center">
                     <span>गुरुवर्य कै. सदाशिव चौगुले</span>
                 </div>
-                <div id="profession" class="text-center">
+                <div id="profession" class="text-center pb-1">
                     <span class="d-block">स्वाभिमानी शिक्षक संघाचा</span>
                     <span class="d-block">शिक्षकरत्न पुरस्कार प्राप्त</span>
                 </div>
@@ -763,48 +782,48 @@
         </div>
      </div>
 
-    <div class="container-fluid py-5 footer">
+    <div class="container-fluid py-4 footer">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-            <div class="col text-center text-sm-start text-md-center style="font-family: Poppins; font-size: 0.9rem" align-content-center">
-                <div>
-                    <h1 style="font-size: 2rem; font-family: Eczar;">ग्रामपंचायत मौजे वडगांव</h1>
+                <div class="col align-content-center mb-4 mb-sm-0 text-center text-sm-start">
+                    <div class="img me-0 me-md-3 me-lg-0">
+                        <img src="Project-image/Vadgaon-logo.jpeg" alt="" height="70px" width="220px">
+                    </div>
                 </div>
-                <div class="mb-4 mb-md-0">
-                    <h2 style="font-size: 1.6rem;">ता. हातकणंगले जि. कोल्हापूर</h2>
+                <div class="col foot-link">
+                    <div class="fs-4">महत्वाची संकेतस्थळे</div>
+                    <div><a href="https://maharashtra.gov.in/" target="_blank">🔗महाराष्ट्र शासन</a></div>
+                    <div><a href="https://majhigrampanchayat.com/" target="_blank">🔗माझी ग्रामपंचायत</a></div>
+                    <div><a href="https://rdd.maharashtra.gov.in/en/" target="_blank">🔗ग्रामविकास विभाग</a></div>
+                    <div><a href="https://egramswaraj.gov.in/" target="_blank">🔗ई-ग्रामस्वराज</a></div>
+                    <div><a href="https://gr.maharashtra.gov.in/1125/%e0%a4%ae%e0%a5%81%e0%a4%96%e0%a5%8d%e0%a4%af-%e0%a4%aa%e0%a5%83%e0%a4%b7%e0%a5%8d%e0%a4%a0" target="_blank">🔗शासन निर्णय</a></div>
+                    <div class="mb-4 mb-md-0"><a href="https://nrega.dord.gov.in/" target="_blank">🔗MGNREGA</a></div>
                 </div>
-            </div>
-            <div class="col foot-link">
-                <div class="fs-4">महत्वाची संकेतस्थळे</div>
-                <div><a href="#">🔗महाराष्ट्र शासन</a></div>
-                <div><a href="#">🔗माझी ग्रामपंचायत</a></div>
-                <div><a href="#">🔗ग्रामविकास विभाग</a></div>
-                <div><a href="#">🔗ई-ग्रामस्वराज</a></div>
-                <div><a href="#">🔗शासन निर्णय</a></div>
-                <div  class="mb-4 mb-md-0"><a href="#">🔗MGNREGA</a></div>
-            </div>
-            <div class="col foot-link">
-                <div class="fs-4">लिंक्स</div>
-                <div><a href="#">🔗मुखपृष्ठ</a></div>
-                <div><a href="#">🔗विकासकामे</a></div>
-                <div><a href="#">🔗योजना</a></div>
-                <div><a href="#">🔗माझे गाव</a></div>
-                <div><a href="#">🔗गॅलरी</a></div>
-                <div  class="mb-4 mb-sm-0"><a href="#">🔗संपर्क</a></div>
-            </div>
-            <div class="col">
-                <div class="fs-4">संपर्क</div>
-                <div class="mb-2" style="font-family: Poppins; font-size: 0.9rem">ग्रामपंचायत कार्यालय, मौजे वडगांव, ता. हातकणंगले, जि. कोल्हापूर 416122</div>
-                <div style="font-family: Poppins; font-size: 0.9rem">संपर्क क्र.: 9665259715</div>
-            </div>
+                <div class="col foot-link">
+                    <div class="fs-4">लिंक्स</div>
+                    <div><a href="index.html">🔗मुखपृष्ठ</a></div>
+                    <div><a href="development.html">🔗विकासकामे</a></div>
+                    <div><a href="#">🔗योजना</a></div>
+                    <div><a href="Village.html">🔗माझे गाव</a></div>
+                    <div><a href="Gallary.html">🔗गॅलरी</a></div>
+                    <div class="mb-4 mb-sm-0"><a href="Contact.html">🔗संपर्क</a></div>
+                </div>
+                <div class="col">
+                    <div class="fs-4">संपर्क</div>
+                    <div class="mb-2" style="font-family: Poppins; font-size: 0.9rem">ग्रामपंचायत कार्यालय, मौजे वडगांव,
+                        ता. हातकणंगले, जि. कोल्हापूर 416122</div>
+                    <div style="font-family: Poppins; font-size: 0.9rem">संपर्क क्र.: 9665259715</div>
+                </div>
             </div>
             <hr>
             <div class="text-center pt-3">
                 <div class="mb-2">
-                    <h5> <span class="text-primary">&copy; Copyright</span> ग्रामपंचायत मौजे वडगांव | All Rights Reserved
+                    <h5 class="fs-6"> <span class="text-primary">Copyright &copy;</span> <span style="font-family: Poppins;" class="fs-6">ग्रामपंचायत मौजे वडगांव</span> | All Rights Reserved
                     </h5>
                 </div>
-                <div><h6>Designed by <span class="text-warning pe-1">Piyush Lohar</span><a href="https://github.com/piyushlohar2008-byte" target="_blank"><i class="text-white fa-brands fa-github"></i></a></h6></div>
+                <div>
+                    <h6 class="fs-6">Designed by <a href="https://piyushlohar2008-byte.github.io./Micro-projects/" target="_blank" class="text-decoration-none"><span class="text-warning">Piyush Lohar</span></a> <a href="https://github.com/piyushlohar2008-byte" target="_blank"><i class="text-white fa-brands fa-github"></i></a> </h6>
+                </div>
             </div>
         </div>
     </div>
