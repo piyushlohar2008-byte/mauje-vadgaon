@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मौजे वडगांव | सेवा</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Eczar:regular,500,600,700,800" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,regular,500,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css?family=Yatra+One:regular" rel="stylesheet" />
+    <style>
+        /* header */
+        @media (max-width: 991px) {
+            .navbar-nav {
+                padding-top: 0.7rem;
+            }
+        }
+        .coustom-link {
+                position: relative;
+                display: inline-block;
+            }
+            .coustom-link::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 1.8px;
+                background-color: red;
+                left: 50%;
+                top: 36px;
+                transform: translateX(-50%);
+                transition: all 0.4s ease;
+            }
+            .coustom-link:hover::after {
+                width: 100%;
+            }
+        .navbar {
+            box-shadow: 1px 1px 10px rgb(211, 211, 211);
+        }
+        .sticky-top {
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 1020 !important;
+        }
+        .nav-head {
+            font-family: Eczar;
+            font-weight: 600;
+            text-shadow: 1px 1px black;
+        }
+        .nav-link {
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            font-weight: bold;
+            color: rgb(117, 117, 117) !important;
+        }
+        .nav-link:hover {
+            color: red !important;
+        }
+        .name {
+            color: red !important;
+        }
+        .navbar-toggler-icon {
+            width: 20px;
+            height: 20px;
+        }
+        /* header */
+
+        .set-radius {
+            border-radius: 5px;
+        }
+        #set-poppin {
+            font-family: Poppins;
+        }
+        #set-yatra {
+            font-family: yatra one;
+        }
+
+        /* footer */
+            .footer {
+                background-color: #3b4654;
+                color: white !important;
+            }
+            .foot-link a {
+                text-decoration: none;
+                font-size: 1.1rem;
+                color: rgb(192, 192, 192);
+                transition: all 0.3s ease-in-out;
+            }
+            .foot-link a:hover {
+                color: red;
+            }
+            .img img {
+                border-radius: 5px;
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+                .img img {
+                    transform: rotate(270deg);
+                }
+            }
+            /* footer */
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top border-2 border-bottom">
+        <div class="container-fluid position-relative">
+            <div class="ms-2 ms-lg-0">
+                <img src="Project-image/Vadgaon-logo.jpeg" alt="" height="70px" width="240px">
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-xl-auto ms-lg-1 mb-2 mb-lg-0 gap-lg-2 gap-xl-3">
+                    <li class="nav-item">
+                        <a class="nav-link active coustom-link" aria-current="page" href="index.html">मुखपृष्ठ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active coustom-link" aria-current="page" href="Gram-panchayat.html">ग्रामपंचायतीबद्दल</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active coustom-link" aria-current="page" href="Seva.html">सेवा</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active coustom-link" aria-current="page" href="development.html">विकासकामे</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active coustom-link" aria-current="page" href="#">योजना</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active coustom-link" aria-current="page" href="#">नोटीस</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active coustom-link" aria-current="page" href="Village.html">गाव</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active coustom-link" aria-current="page" href="Gallary.html">गॅलरी</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active coustom-link" aria-current="page" href="School.html">शाळा</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active coustom-link" aria-current="page" href="Contact.html">संपर्क</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-5 bg-body-tertiary">
+        <h1 class="text-center fs-2 text-body-secondary" id="set-yatra">सेवा</h1>
+        <h3 class="text-center fs-6 mb-4 text-secondary" id="set-poppin">ग्रामपंचायत मार्फत पुरविण्यात येणाऱ्या सेवा</h3>
+
+        <div class="container mb-3">
+            <div class="row border border-1 bg-white py-3 set-radius">
+                <div class="col col-11 col-lg-3 mb-2 mb-lg-0">
+                    <h3 class="text-start fs-5 text-primary fw-bold" id="set-yatra">जन्म नोंदणी व प्रमाणपत्र</h3>
+                </div>
+                <div class="col col-11 col-lg-6 mb-2 mb-lg-0">
+                    <div class="mb-3" id="set-poppin">
+                        गावाच्या हद्दीत जन्म झाला असल्यास २१ दिवसांच्या आत जन्म नोंदणी केली जाते व जन्म प्रमाणपत्र दिले जाते.
+                    </div>
+                    <div class="mb-1">
+                        <h3 class="fw-bold fs-6" id="set-poppin">आवश्यक कागदपत्रे:</h3>
+                        <ul id="set-poppin">
+                            <li>अर्ज</li>
+                            <li>आई-वडील यांचे आधारकार्ड</li>
+                            <li>आशा / अंगणवाडी कार्यकर्ती यांचा अहवाल</li>
+                            <li>आवश्यकतेनुसार रुग्णालय कागदपत्रे</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold fs-6" id="set-poppin">प्रक्रिया:</h3>
+                        <div id="set-poppin">
+                           जन्म गावाच्या हद्दीत झाला असल्याची खात्री झाल्यावर नोंदणी केली जाते. प्राथमिक आरोग्य केंद्र येथे झालेल्या जन्माची नोंदणी त्याच ठिकाणी केली जाते. 
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-11  col-lg-3">
+                    <h3 class="fs-6 fw-bold" id="set-poppin">शुल्क:</h3>
+                    <div id="set-poppin">
+                        पहिले प्रमाणपत्र मोफत
+                    </div>
+                    <div class="mb-2" id="set-poppin">
+                        त्यानंतर 20 रुपये
+                    </div>
+                    <h3 class="fw-bold fs-6" id="set-poppin">वेळ:</h3>
+                <div id="set-poppin">7 दिवस</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row border border-1 bg-white py-3 set-radius">
+                <div class="col col-11 col-lg-3 mb-2 mb-lg-0">
+                    <h3 class="text-start fs-5 text-primary fw-bold" id="set-yatra">मृत्यू नोंदणी व प्रमाणपत्र</h3>
+                </div>
+                <div class="col col-11 col-lg-6 mb-2 mb-lg-0">
+                    <div class="mb-3" id="set-poppin">
+                        गावाच्या हद्दीत मृत्यू झाला असल्यास २१ दिवसांच्या आत मृत्यू नोंदणी केली जाते व मृत्यू प्रमाणपत्र दिले जाते.
+                    </div>
+                    <div class="mb-1">
+                        <h3 class="fw-bold fs-6" id="set-poppin">आवश्यक कागदपत्रे:</h3>
+                        <ul id="set-poppin">
+                            <li>अर्ज</li>
+                            <li>मयत व्यक्तीचे आधारकार्ड</li>
+                            <li>आवश्यकतेनुसार रुग्णालय / पोलीस स्टेशन कागदपत्रे</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold fs-6" id="set-poppin">प्रक्रिया:</h3>
+                        <div id="set-poppin">
+                           मृत्यू गावाच्या हद्दीत झाला असल्याची खात्री झाल्यावर नोंदणी केली जाते.
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-11  col-lg-3">
+                    <h3 class="fs-6 fw-bold" id="set-poppin">शुल्क:</h3>
+                    <div id="set-poppin">
+                        पहिले प्रमाणपत्र मोफत
+                    </div>
+                    <div class="mb-2" id="set-poppin">
+                        त्यानंतर 20 रुपये
+                    </div>
+                    <h3 class="fw-bold fs-6" id="set-poppin">वेळ:</h3>
+                <div id="set-poppin">7 दिवस</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row border border-1 bg-white py-3 set-radius">
+                <div class="col col-11 col-lg-3 mb-2 mb-lg-0">
+                    <h3 class="text-start fs-5 text-primary fw-bold" id="set-yatra">विवाह नोंदणी व प्रमाणपत्र</h3>
+                </div>
+                <div class="col col-11 col-lg-6 mb-2 mb-lg-0">
+                    <div class="mb-3" id="set-poppin">
+                        विवाह नोंदणी अधिनियम 1998 नुसार विवाह नोंदणी केली जाते.
+                    </div>
+                    <div class="mb-1">
+                        <h3 class="fw-bold fs-6" id="set-poppin">आवश्यक कागदपत्रे:</h3>
+                        <ul id="set-poppin">
+                            <li>विवाहाचे ज्ञापन</li>
+                            <li>वर-वधूचे जन्म प्रमाणपत्र</li>
+                            <li>आधार / मतदार कार्ड / ड्रायविंग लायसन्स</li>
+                            <li>प्राप्त अर्ज व कागदपत्रांची छाननी करून विवाह नोंदणी केली जाते.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="fw-bold fs-6" id="set-poppin">प्रक्रिया:</h3>
+                        <div id="set-poppin">
+                           जन्म गावाच्या हद्दीत झाला असल्याची खात्री झाल्यावर नोंदणी केली जाते. प्राथमिक आरोग्य केंद्र येथे झालेल्या जन्माची नोंदणी त्याच ठिकाणी केली जाते. 
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-11  col-lg-3">
+                    <h3 class="fs-6 fw-bold" id="set-poppin">शुल्क:</h3>
+                    <div id="set-poppin">
+                        50 ते 200 रुपये
+                    </div>
+                    <div class="mb-2" id="set-poppin">
+                        त्यानंतर 20 रुपये
+                    </div>
+                    <h3 class="fw-bold fs-6" id="set-poppin">वेळ:</h3>
+                <div id="set-poppin">——</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-4 footer">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col align-content-center mb-4 mb-sm-0 text-center text-sm-start">
+                    <div class="img me-0 me-md-3 me-lg-0">
+                        <img src="Project-image/Vadgaon-logo.jpeg" alt="" height="70px" width="220px">
+                    </div>
+                </div>
+                <div class="col foot-link">
+                    <div class="fs-4">महत्वाची संकेतस्थळे</div>
+                    <div><a href="https://maharashtra.gov.in/" target="_blank">🔗महाराष्ट्र शासन</a></div>
+                    <div><a href="https://majhigrampanchayat.com/" target="_blank">🔗माझी ग्रामपंचायत</a></div>
+                    <div><a href="https://rdd.maharashtra.gov.in/en/" target="_blank">🔗ग्रामविकास विभाग</a></div>
+                    <div><a href="https://egramswaraj.gov.in/" target="_blank">🔗ई-ग्रामस्वराज</a></div>
+                    <div><a href="https://gr.maharashtra.gov.in/1125/%e0%a4%ae%e0%a5%81%e0%a4%96%e0%a5%8d%e0%a4%af-%e0%a4%aa%e0%a5%83%e0%a4%b7%e0%a5%8d%e0%a4%a0" target="_blank">🔗शासन निर्णय</a></div>
+                    <div class="mb-4 mb-md-0"><a href="https://nrega.dord.gov.in/" target="_blank">🔗MGNREGA</a></div>
+                </div>
+                <div class="col foot-link">
+                    <div class="fs-4">लिंक्स</div>
+                    <div><a href="index.html">🔗मुखपृष्ठ</a></div>
+                    <div><a href="development.html">🔗विकासकामे</a></div>
+                    <div><a href="#">🔗योजना</a></div>
+                    <div><a href="Village.html">🔗माझे गाव</a></div>
+                    <div><a href="Gallary.html">🔗गॅलरी</a></div>
+                    <div class="mb-4 mb-sm-0"><a href="Contact.html">🔗संपर्क</a></div>
+                </div>
+                <div class="col">
+                    <div class="fs-4">संपर्क</div>
+                    <div class="mb-2" style="font-family: Poppins; font-size: 0.9rem">ग्रामपंचायत कार्यालय, मौजे वडगांव,
+                        ता. हातकणंगले, जि. कोल्हापूर 416122</div>
+                    <div style="font-family: Poppins; font-size: 0.9rem">संपर्क क्र.: 9665259715</div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center pt-3">
+                <div class="mb-2">
+                    <h5 class="fs-6"> <span class="text-primary">Copyright &copy;</span> <span style="font-family: Poppins;" class="fs-6">ग्रामपंचायत मौजे वडगांव</span> | All Rights Reserved
+                    </h5>
+                </div>
+                <div>
+                    <h6 class="fs-6">Designed by <a href="https://piyushlohar2008-byte.github.io./Micro-projects/" target="_blank" class="text-decoration-none"><span class="text-warning">Piyush Lohar</span></a> <a href="https://github.com/piyushlohar2008-byte" target="_blank"><i class="text-white fa-brands fa-github"></i></a> </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
