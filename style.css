@@ -1,0 +1,307 @@
+        html, body {
+            padding: 0;
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+        /* header */
+        @media (max-width: 991px) {
+            .navbar-nav {
+                padding-top: 0.7rem;
+            }
+        }
+        .coustom-link {
+                position: relative;
+                display: inline-block;
+            }
+            .coustom-link::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 1.8px;
+                background-color: red;
+                left: 50%;
+                top: 36px;
+                transform: translateX(-50%);
+                transition: all 0.4s ease;
+            }
+            .coustom-link:hover::after {
+                width: 100%;
+            }
+        .navbar {
+            box-shadow: 1px 1px 10px rgb(211, 211, 211);
+        }
+        .sticky-top {
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 1020 !important;
+        }
+        .nav-head {
+            font-family: Eczar;
+            font-weight: 600;
+            text-shadow: 1px 1px black;
+        }
+        .nav-link {
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            font-weight: bold;
+            color: rgb(117, 117, 117) !important;
+        }
+        .nav-link:hover {
+            color: red !important;
+        }
+        .name {
+            color: red !important;
+        }
+        .navbar-toggler {
+            border: none !important;
+        }
+        .navbar-toggler:focus,
+        .navbar-toggler:active,
+        .navbar-toggler:focus-visible {
+            outline: none !important;
+            box-shadow: none !important;
+         }
+        .navbar-toggler-icon {
+            width: 25px;
+            height: 25px;
+        }
+
+        /* header */
+
+        /*
+modal-header */
+        .modal-header{
+            background: transparent;
+            border-bottom: none;
+         }
+        .btn-close {
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        .btn-close:focus {
+            box-shadow: none;
+        }
+        /*
+modal-header */
+
+        /* Web content slider */
+        #animate {
+            animation-name: color-changing;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-duration: 0.4s;
+        }
+        #animate sup {
+            transform: rotate(45deg);
+        }
+        @keyframes color-changing {
+            0% {
+                color: blue;
+            }
+            50% {
+                color: red;
+            }
+        }
+        .notification-content .label {
+            font-weight: 600;
+            color: #0d6efd;
+            white-space: nowrap;
+            font-size: 1.2rem;
+        }
+        .web-slider {
+            border-top: 2px solid black !important;
+            border-bottom: 2px solid black !important;
+        }
+        /* Web content slider */
+
+
+        /* Village first information entry point */
+        .mid-container {
+            background-color: #f2f4f6;
+        }
+        .hero-head {
+            font-weight: 600;
+            font-family: Eczar;
+        }
+        .hero-sub-head {
+            font-family: Poppins, serif;
+        }
+        .mid-paragraph {
+            font-family: Poppins, serif;
+            letter-spacing: 1px;
+        }
+        .mid-list {
+            font-family: Poppins, serif;
+        }
+        #para {
+            font-family: Poppins, serif;
+            font-weight: 500;
+            text-align: justify;
+        }
+        /* Village first information entry point */
+
+
+        /* Village second information entry point */
+        .village-info {
+            background-color: #f8f9fa;
+            padding-bottom: 4rem;
+        }
+        #village-info-head {
+            padding-top: 1rem;
+            margin-bottom: 2.8rem;
+            text-align: center;
+            font-family: Hind;
+            font-size: 2rem;
+            color: darkred;
+            font-weight: 600;
+        }
+        .col-effect {
+            transition: all 0.3s ease-in-out;
+            border-radius: 10px;
+
+        }
+        .col-effect:hover {
+            transform: translateY(-15px);
+            cursor: default;
+            box-shadow: 2px 2px 8px rgb(182, 182, 182), -2px -2px 8px rgb(180, 180, 180);
+        }
+        /* Village second information entry point */
+
+
+        /* #seva section */
+        #help-head {
+            padding-top: 1rem;
+            margin-bottom: 2.8rem;
+            text-align: center;
+            font-family: Hind;
+            font-size: 2.2rem;
+            color: darkred;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 0.4rem;
+        }
+        #help-head-2 {
+            text-align: center;
+            font-size: 1rem;
+            font-family: poppins;
+            font-weight: normal;
+        }
+        .help-col-head {
+            font-size: 1.2rem;
+            font-family: Poppins;
+            color: darkred;
+            font-weight: 600;
+        }
+        #help-para {
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        .help-effect {
+            border: 1.5px solid black;
+        }
+        .help-effect:hover {
+            border: 1.5px solid red;
+            cursor: default;
+        }
+        /* #seva section */
+
+
+        .working-container {
+            padding: 3rem 0rem;
+            background-color: #f8f9fa;
+        }
+        .working-container .col {
+            transition: all 0.3s ease-in-out;
+        }
+        .working-container .col:hover {
+            box-shadow: 2px 2px 10px rgb(160, 160, 160), -2px -2px 10px rgb(160, 160, 160);
+            cursor: default;
+        }
+        .work-head {
+            text-align: center;
+            font-family: Hind;
+            font-size: 1.9rem;
+            color: darkred;
+            font-weight: 600;
+            margin-bottom: 1.8rem;
+        }
+        .work-main img {
+            border-radius: 50%;
+        }
+
+        .member-1 img {
+            border-radius: 50%;
+            margin: 0.3rem 0;
+        }
+        .image-curve {
+            border-radius: 8px;
+            background-color: rgb(247, 243, 243);
+        }
+
+        .flexbox-home {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .item-itm iframe{
+            width: 700px;
+            height: 450px;
+            transition: all 0.5s ease-in-out;
+        }
+        @media (max-width: 670px) {
+            .item-itm iframe {
+                width: 550px;
+                height: 400px;
+            }
+        }
+        @media (max-width: 580px) {
+            .item-itm iframe {
+                width: 500px;
+                height: 400px;
+            }
+        }
+        @media (max-width: 520px) {
+            .item-itm iframe {
+                width: 460px;
+                height: 380px;
+            }
+        }
+        @media (max-width: 460px) {
+            .item-itm iframe {
+                width: 350px;
+                height: 350px;
+            }
+        }
+        @media (max-width: 350px) {
+            .item-itm iframe {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        /* footer */
+        .footer {
+            background-color: #3b4654;
+            color: white !important;
+        }
+        .foot-link a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: rgb(192, 192, 192);
+            transition: all 0.3s ease-in-out;
+        }
+        .foot-link a:hover {
+            color: red;
+        }
+        .img img {
+            border-radius: 5px;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            .img img {
+                transform: rotate(270deg);
+            }
+        }
+        /* footer */
