@@ -7,7 +7,7 @@ A responsive and modern Gram Panchayat website developed using HTML, CSS, Bootst
 
 ## 🚀 Live Website
 
-https://mauje-vadgaon.netlify.app/
+https://maujevadgaongp.vercel.app/
 
 ## 📌 Features
 
@@ -73,7 +73,7 @@ Hosted on Netlify
 
 ## 🌐 Live Demo
 
-https://mauje-vadgaon.netlify.app/
+https://maujevadgaongp.vercel.app/
 
 ---
 Made with ❤️ by Piyush Lohar
