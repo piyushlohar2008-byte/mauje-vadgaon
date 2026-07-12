@@ -29,9 +29,8 @@ https://maujevadgaongp.vercel.app/
 - HTML5
 - CSS3
 - Bootstrap 5
-- JavaScript
 - GitHub
-- Netlify
+- Vercel
 
 ## 📁 Project Pages
 
@@ -48,7 +47,7 @@ https://maujevadgaongp.vercel.app/
 
 ## 🌍 Deployment
 
-Hosted on Netlify
+Hosted on Vercel
 
 ## 📈 SEO
 
@@ -69,7 +68,7 @@ Hosted on Netlify
 
 ## 🔗 GitHub Repository
 
-(Add your GitHub repository link here)
+(https://github.com/piyushlohar2008-byte/mauje-vadgaon/)
 
 ## 🌐 Live Demo
 
