@@ -45,7 +45,7 @@ form.addEventListener("submit", function (e) {
     btn.disabled = true;
     btn.innerHTML = "Sending...";
 
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+    emailjs.send("YOUR_SERVICE_ID", "template_x1c3z6h", {
         name: name,
         mobile: mobile,
         email: email,
