@@ -60,7 +60,7 @@ form.addEventListener("submit", function (e) {
         form.reset();
 
         btn.disabled = false;
-        btn.innerHTML = "सबमिट";
+        btn.innerHTML = "sending";
 
         setTimeout(() => {
             msg.innerHTML = "";
@@ -74,7 +74,7 @@ form.addEventListener("submit", function (e) {
         msg.innerHTML = "Failed to submit!";
 
         btn.disabled = false;
-        btn.innerHTML = "सबमिट";
+        btn.innerHTML = "sending";
     });
 
 });
