@@ -1,5 +1,5 @@
 emailjs.init({
-    publicKey: "YOUR_PUBLIC_KEY",
+    publicKey: "ShzGF-UgT-PNklaSn",
 });
 
 const form = document.getElementById("contactForm");
@@ -45,7 +45,7 @@ form.addEventListener("submit", function (e) {
     btn.disabled = true;
     btn.innerHTML = "Sending...";
 
-    emailjs.send("YOUR_SERVICE_ID", "template_x1c3z6h", {
+    emailjs.send("service_k118vme", "template_x1c3z6h", {
         name: name,
         mobile: mobile,
         email: email,
